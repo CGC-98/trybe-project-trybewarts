@@ -2,7 +2,8 @@
 const btnSubmitLogin = document.getElementById('btn-submit-login');
 const inputEmailLogin = document.getElementById('input-email-login');
 const inputPasswordLogin = document.getElementById('input-password-login');
-
+const checkAgreement = document.getElementById('agreement');
+const btnAgreement = document.getElementById('submit-btn');
 // Function;
 function emailValidation() {
   const inputEmailLoginValue = inputEmailLogin.value;
@@ -31,3 +32,10 @@ function onClickLoginAlert(event) {
 
 // Listeners;
 btnSubmitLogin.addEventListener('click', onClickLoginAlert);
+
+function enableBnt() {
+  if (checkAgreement.checked) {
+    btnAgreement.disabled = false;
+  }
+}
+checkAgreement.addEventListener('click', enableBnt);
