@@ -12,6 +12,16 @@ header {
   height: 100px;
 }
 
+main {
+  display: flex;
+}
+
 .trybewarts-login {
   display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  min-width: 675px;
+  width: 675px;
 }
