@@ -31,7 +31,7 @@ main {
 .trybewarts-login {
   display: flex;
   align-self: center;
-  margin-right: 15px ;
+  margin-right: 15px;
 }
 
 #evaluation-form {
@@ -46,5 +46,16 @@ main {
 
 #label-family {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+
+  /* Optional */
+  margin: 5px;
+}
+
+#label-content {
+  display: flex;
+  flex-direction: column;
+
+  /* Optional */
+  margin: 5px;
 }
