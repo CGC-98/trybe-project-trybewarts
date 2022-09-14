@@ -5,11 +5,13 @@ const inputPasswordLogin = document.getElementById('input-password');
 
 // Function;
 function emailValidation() {
-  return inputEmailLogin === 'tryber@teste.com';
+  const inputEmailLoginValue = inputEmailLogin.value;
+  return inputEmailLoginValue === 'tryber@teste.com';
 }
 
 function passwordValidation() {
-  return inputPasswordLogin === '123456';
+  const inputPasswordLoginValue = inputPasswordLogin.value;
+  return inputPasswordLoginValue === '123456';
 }
 
 function loginAlert(emailValid, passwordValid) {
@@ -20,7 +22,8 @@ function loginAlert(emailValid, passwordValid) {
   }
 }
 
-function onClickLoginAlert() {
+function onClickLoginAlert(event) {
+  event.preventDefault();
   const emailValid = emailValidation();
   const passwordValid = passwordValidation();
   loginAlert(emailValid, passwordValid);
