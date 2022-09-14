@@ -85,3 +85,11 @@ main {
   flex-direction: column;
   margin: 10px 0;
 }
+
+footer {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 20px;
+  background-color: rgb(40, 36, 36);
+  padding: 15px 0;
+}
