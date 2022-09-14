@@ -15,6 +15,11 @@ main {
   display: flex;
 }
 
+/* section {
+  display: flex;
+  flex-flow: column;
+} */
+
 .trybewarts-login {
   display: flex;
   align-self: center;
@@ -73,4 +78,10 @@ main {
   min-height: 30px;
   border-radius: 7px;
   margin: 1px;
+}
+
+#label-family-section , #label-content-section , #label-rate-section {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
 }
