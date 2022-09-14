@@ -4,12 +4,24 @@
   padding: 0;
 }
 
-header {
+.header {
   display: flex;
+  justify-content: space-between;
   background-color: rgb(50, 167, 145);
 
   /* Optional */
   height: 100px;
+}
+
+.trybewarts-header-logo {
+  margin-left: 15px;
+}
+
+h1 {
+  display: flex;
+  align-self: center;
+  color: white;
+  font-size: 45px;
 }
 
 main {
@@ -18,6 +30,8 @@ main {
 
 .trybewarts-login {
   display: flex;
+  align-self: center;
+  margin-right: 15px ;
 }
 
 #evaluation-form {
