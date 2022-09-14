@@ -10,8 +10,7 @@
 </head>
 
 <body>
-  <!-- coloquei o 'forms dentro do header' requisito 4  -->
-  <header class="header"> 
+  <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form action="" class="trybewarts-login">
@@ -35,6 +34,39 @@
         <option value="Corvinode" id="corvinode-house">Corvinode</option>
         <option value="Pytherina" id="pytherina-house">Pytherina</option>
       </select>
+
+      <label for="" id="label-family">Qual sua família?
+      </label>
+      <label for="family-frontend">
+        <input type="radio" name="family" value="Frontend" id="family-frontend">Frontend
+      </label>
+      <label for="family-backend">
+        <input type="radio" name="family" value="Backend" id="family-backend">Backend
+      </label>
+      <label for="family-fullstack">
+        <input type="radio" name="family" value="FullStack" id="family-fullstack">FullStack
+      </label>
+
+      <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?
+      </label>
+      <label for="subject-HoFs">
+        <input type="checkbox" name="subject-HoFs" id="subject-HoFs" class="subject" value="HoFs">HoFs
+      </label>
+      <label for="subject-Jest">
+        <input type="checkbox" name="subject-Jest" id="subject-Jest" class="subject" value="Jest">Jest
+      </label>
+      <label for="subject-Promises">
+        <input type="checkbox" name="subject-Promises" id="subject-Promises" class="subject" value="Promises">Promises
+      </label>
+      <label for="subject-React">
+        <input type="checkbox" name="subject-React" id="subject-React" class="subject" value="React">React
+      </label>
+      <label for="subject-SQL">
+        <input type="checkbox" name="subject-SQL" id="subject-SQL" class="subject" value="SQL">SQL
+      </label>
+      <label for="subject-Python">
+        <input type="checkbox" name="subject-Python" id="subject-Python" class="subject" value="Python">Python
+      </label>
     </form>
     <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
   </main>
