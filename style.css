@@ -11,3 +11,7 @@ header {
   /* Optional */
   height: 100px;
 }
+
+.trybewarts-login {
+  display: flex;
+}
