@@ -39,7 +39,7 @@ main {
   flex-direction: column;
   min-width: 675px;
   width: 675px;
-  border: 1px solid red ;
+  border: 1px solid red;
 }
 
 #trybewarts-forms-logo {

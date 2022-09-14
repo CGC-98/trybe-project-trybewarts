@@ -1,7 +1,7 @@
 // Const/Let;
 const btnSubmitLogin = document.getElementById('btn-submit-login');
-const inputEmailLogin = document.getElementById('input-email');
-const inputPasswordLogin = document.getElementById('input-password');
+const inputEmailLogin = document.getElementById('input-email-login');
+const inputPasswordLogin = document.getElementById('input-password-login');
 
 // Function;
 function emailValidation() {
