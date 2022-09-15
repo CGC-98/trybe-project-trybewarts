@@ -2,7 +2,7 @@
 const btnSubmitLogin = document.getElementById('btn-submit-login');
 const inputEmailLogin = document.getElementById('input-email-login');
 const inputPasswordLogin = document.getElementById('input-password-login');
-const textareaComment = document.getElementById('textarea-comment');
+const textareaInput = document.getElementById('textarea');
 const counterSpan = document.getElementById('counter');
 const checkAgreement = document.getElementById('agreement');
 const btnAgreement = document.getElementById('submit-btn');
@@ -33,9 +33,8 @@ function onClickLoginAlert(event) {
   loginAlert(emailValid, passwordValid);
 }
 
-function onKeydownCounter() {
-  const textLength = textareaComment.value.length;
-  console.log(textLength);
+function onKeyupCounter() {
+  const textLength = textareaInput.value.length;
   const counterDisplay = 500 - textLength;
   counterSpan.innerText = counterDisplay;
 }
@@ -48,5 +47,5 @@ function enableBnt() {
 
 // Listeners;
 btnSubmitLogin.addEventListener('click', onClickLoginAlert);
-textareaComment.addEventListener('keyup', onKeydownCounter);
+textareaInput.addEventListener('keyup', onKeyupCounter);
 checkAgreement.addEventListener('click', enableBnt);
