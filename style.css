@@ -86,7 +86,7 @@ main {
   margin: 10px 0;
 }
 
-#textarea-section , #agreement-section {
+#textarea-section , #agreement-section , #textarea-comment-section {
   display: flex;
   flex-direction: column;
   margin: 10px 0;

@@ -4,6 +4,8 @@ const inputEmailLogin = document.getElementById('input-email-login');
 const inputPasswordLogin = document.getElementById('input-password-login');
 const textareaComment = document.getElementById('textarea-comment');
 const counterSpan = document.getElementById('counter');
+const checkAgreement = document.getElementById('agreement');
+const btnAgreement = document.getElementById('submit-btn');
 
 // Function;
 function emailValidation() {
@@ -38,6 +40,13 @@ function onKeydownCounter() {
   counterSpan.innerText = counterDisplay;
 }
 
+function enableBnt() {
+  if (checkAgreement.checked) {
+    btnAgreement.disabled = false;
+  }
+}
+
 // Listeners;
 btnSubmitLogin.addEventListener('click', onClickLoginAlert);
 textareaComment.addEventListener('keyup', onKeydownCounter);
+checkAgreement.addEventListener('click', enableBnt);
