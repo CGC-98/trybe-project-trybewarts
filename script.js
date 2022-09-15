@@ -2,6 +2,8 @@
 const btnSubmitLogin = document.getElementById('btn-submit-login');
 const inputEmailLogin = document.getElementById('input-email-login');
 const inputPasswordLogin = document.getElementById('input-password-login');
+const textareaComment = document.getElementById('textarea-comment');
+const counterSpan = document.getElementById('counter');
 
 // Function;
 function emailValidation() {
@@ -29,5 +31,13 @@ function onClickLoginAlert(event) {
   loginAlert(emailValid, passwordValid);
 }
 
+function onKeydownCounter() {
+  const textLength = textareaComment.value.length;
+  console.log(textLength);
+  const counterDisplay = 500 - textLength;
+  counterSpan.innerText = counterDisplay;
+}
+
 // Listeners;
 btnSubmitLogin.addEventListener('click', onClickLoginAlert);
+textareaComment.addEventListener('keyup', onKeydownCounter);
