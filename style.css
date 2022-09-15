@@ -4,6 +4,16 @@
   padding: 0;
 }
 
+body {
+  min-width: 1366px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 h1 {
   display: flex;
   align-self: center;
@@ -11,85 +21,120 @@ h1 {
   font-size: 45px;
 }
 
-main {
+h2 {
   display: flex;
-}
-
-/* section {
-  display: flex;
-  flex-flow: column;
-} */
-
-.trybewarts-login {
-  display: flex;
-  align-self: center;
-  margin-right: 15px;
+  justify-content: center;
+  font-size: 32px;
+  margin: 20px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   background-color: rgb(50, 167, 145);
+  height: 80px;
+}
 
-  /* Optional */
-  height: 100px;
+.trybewarts-login {
+  display: flex;
+  align-self: center;
+  margin-right: 20px;
 }
 
 .trybewarts-header-logo {
-  margin-left: 15px;
+  margin-left: 20px;
+}
+
+#input-email-login , #input-password-login {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 2px;
+}
+
+#btn-submit-login {
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
   min-width: 675px;
-  width: 675px;
+  line-height: 32px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-#label-family {
-  display: flex;
-  flex-direction: column;
-
-  /* Optional */
-  margin: 5px;
-}
-
-#label-content {
-  display: flex;
-  flex-direction: column;
-
-  /* Optional */
-  margin: 5px;
-}
-
 #personal-info-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 30px 0;
+  padding: 15px 0;
 }
 
-#input-name , #input-lastname , #input-email , #house {
+#input-name , #input-lastname , #input-email , #house-label {
   min-width: 40%;
+  width: 40%;
   min-height: 30px;
   border-radius: 7px;
   margin: 1px;
 }
 
-#label-family-section , #label-content-section , #label-rate-section {
+#house {
+  width: 85%;
+  height: 30px;
+  border-radius: 7px;
+}
+
+#inquiry {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-family-section {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+#label-content-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#checkbox-box {
+  display: flex;
+  flex-flow: column wrap;
+  height: 127px;
+}
+
+/* , #label-rate-section */
+#textarea-section , #agreement-section , #textarea-comment-section {
   display: flex;
   flex-direction: column;
   margin: 10px 0;
 }
 
-#textarea-section , #agreement-section , #textarea-comment-section {
-  display: flex;
-  flex-direction: column;
-  margin: 10px 0;
+#submit-btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 footer {
