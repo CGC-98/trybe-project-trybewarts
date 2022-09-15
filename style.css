@@ -63,6 +63,7 @@ h2 {
   flex-direction: column;
   min-width: 675px;
   line-height: 32px;
+  font-size: 16px;
 }
 
 #trybewarts-forms-logo {
@@ -70,6 +71,7 @@ h2 {
 }
 
 #personal-info-section {
+  border-bottom: 2px solid black;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -78,30 +80,26 @@ h2 {
 
 #input-name , #input-lastname , #input-email , #house-label {
   min-width: 40%;
-  width: 40%;
+  width: 49%;
   min-height: 30px;
   border-radius: 7px;
   margin: 1px;
 }
 
 #house {
-  width: 85%;
+  width: 88%;
   height: 30px;
   border-radius: 7px;
 }
 
 #inquiry {
+  border-bottom: 2px solid gray;
   display: flex;
-  justify-content: center;
-  margin: 10px 0;
+  justify-content: space-around;
+  padding: 15px 0;
 }
 
-#label-family {
-  display: flex;
-  flex-direction: column;
-}
-
-#label-content {
+#label-family , #label-content {
   display: flex;
   flex-direction: column;
 }
@@ -109,32 +107,39 @@ h2 {
 #label-family-section {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 30%;
 }
 
 #label-content-section {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 #checkbox-box {
   display: flex;
   flex-flow: column wrap;
-  height: 127px;
+  height: 64px;
 }
 
-/* , #label-rate-section */
+#label-rate-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 3%;
+}
+
 #textarea-section , #agreement-section , #textarea-comment-section {
   display: flex;
   flex-direction: column;
-  margin: 10px 0;
 }
 
 #submit-btn {
-  width: 100px;
-  height: 30px;
+  background-color: rgb(50, 167, 145);
+  color: white;
+  width: 40%;
+  height: 40px;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin: 0 0 10px 60%;
 }
 
 footer {
