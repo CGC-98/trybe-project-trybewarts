@@ -18,16 +18,6 @@ const labelContent = document.getElementsByClassName('subject');
 const labelComment = document.getElementById('textarea');
 const evaluationForm = document.getElementById('evaluation-form');
 
-const arrayBase = [
-  'Nome',
-  'Email',
-  'Casa',
-  'Família',
-  'Matérias',
-  'Avaliação',
-  'Observações',
-];
-
 // Function;
 function emailValidation() {
   const inputEmailLoginValue = inputEmailLogin.value;
@@ -87,11 +77,20 @@ function describeSubmit() {
 function returnSubmit() {
   const newSection = document.createElement('section');
   newSection.id = 'form-data';
+  const arrayBase = [
+    'Nome',
+    'Email',
+    'Casa',
+    'Família',
+    'Matérias',
+    'Avaliação',
+    'Observações',
+  ];
   const arrayDom = describeSubmit();
   arrayBase.forEach((e, i) => {
-    const newReturn = document.createElement('p');
-    newReturn.innerText = `${e}: ${arrayDom[i]}`;
-    newSection.appendChild(newReturn);
+    const newParagraph = document.createElement('p');
+    newParagraph.innerText = `${e}: ${arrayDom[i]}`;
+    newSection.appendChild(newParagraph);
   });
   mainSection.insertBefore(newSection, tryLogo);
 }
