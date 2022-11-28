@@ -6,6 +6,27 @@ const textareaInput = document.getElementById('textarea');
 const counterSpan = document.getElementById('counter');
 const checkAgreement = document.getElementById('agreement');
 const btnAgreement = document.getElementById('submit-btn');
+const mainSection = document.querySelector('main');
+const tryLogo = document.getElementById('trybewarts-forms-logo');
+const nameInputForm = document.getElementById('input-name');
+const lastnameInputForm = document.getElementById('input-lastname');
+const emailInputForm = document.getElementById('input-email');
+const houseForm = document.getElementById('house');
+const labelFamily = document.querySelectorAll('input[name = "family"]');
+const labelRate = document.querySelectorAll('input[name = "rate"]');
+const labelContent = document.getElementsByClassName('subject');
+const labelComment = document.getElementById('textarea');
+const evaluationForm = document.getElementById('evaluation-form');
+
+const arrayBase = [
+  'Nome',
+  'Email',
+  'Casa',
+  'Família',
+  'Matérias',
+  'Avaliação',
+  'Observações',
+];
 
 // Function;
 function emailValidation() {
@@ -45,7 +66,44 @@ function enableBnt() {
   }
 }
 
+function describeSubmit() {
+  const labelFamilyReturn = [...labelFamily].find((e) => e.checked);
+  const labelRateReturn = [...labelRate].find((e) => e.checked);
+  const labelContentReturn = [...labelContent].filter((e) => e.checked)
+    .reduce((acc, curr, i, a) => (i < a.length - 1
+      ? `${acc}${curr.value}, `
+      : `${acc}${curr.value}`), '');
+  return [
+    `${nameInputForm.value} ${lastnameInputForm.value}`,
+    emailInputForm.value,
+    houseForm.value,
+    labelFamilyReturn.value,
+    labelContentReturn,
+    labelRateReturn.value,
+    labelComment.value,
+  ];
+}
+
+function returnSubmit() {
+  const newSection = document.createElement('section');
+  newSection.id = 'form-data';
+  const arrayDom = describeSubmit();
+  arrayBase.forEach((e, i) => {
+    const newReturn = document.createElement('p');
+    newReturn.innerText = `${e}: ${arrayDom[i]}`;
+    newSection.appendChild(newReturn);
+  });
+  mainSection.insertBefore(newSection, tryLogo);
+}
+
+function onSubmitClick(event) {
+  event.preventDefault();
+  returnSubmit();
+  evaluationForm.style.display = 'none';
+}
+
 // Listeners;
 btnSubmitLogin.addEventListener('click', onClickLoginAlert);
 textareaInput.addEventListener('keyup', onKeyupCounter);
 checkAgreement.addEventListener('click', enableBnt);
+btnAgreement.addEventListener('click', onSubmitClick);
