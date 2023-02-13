@@ -1,5 +1,6 @@
 Projeto concluso, baseado em Trybewarts pela Trybe;
-Arquivos excedentes a serem descartados;
+
+Teve como intuito a aplicação de conceitos generalistas acerca de bibliotecas e frameworks, além da utilização mais aprofundada de CSS, desde o lógica Flexbox até a idealização do Mobile First com CSS responsivo. A construção é feita por um formulário de ingressão à fictícia Trybewarts
 
 <!-- Olá, Tryber!
 Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
